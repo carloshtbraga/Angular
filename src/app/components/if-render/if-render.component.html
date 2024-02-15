@@ -1,0 +1,16 @@
+<div class="class">
+  <h2 *ngIf="canShow">Estamos mostrando pq foi permitido</h2>
+  <p>
+    Aqui eu uso o nfIf para atraves de um atributo renderizar ou nao a frase
+    acima
+  </p>
+
+  <h2 *ngIf="isNameCarlos(); else nameNotFound">Meu nome é Carlos</h2>
+  <p>
+    Aqui eu uso o ngIf para atraves de um método renderizar a frase acima, se
+    o método criado para determinar se o nome é carlos , caso não seja ele irá
+    renderizar o que estiver dentro do else
+  </p>
+  <ng-template #nameNotFound><h2>Nome não encontrado</h2></ng-template>
+  <a href="https://form-devs4-good.vercel.app/" target="_blank">formdevs4good</a>
+</div>
